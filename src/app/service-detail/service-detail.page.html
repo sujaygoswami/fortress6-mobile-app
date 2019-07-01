@@ -1,0 +1,46 @@
+<ion-content class="inner-page">
+
+	<div class="logo-holder no-background fixed-header"><div><img src="assets/images/company-logo.png"></div></div>
+
+
+
+	<div class="main-content-wrap force-no-pad">
+		<div class="main-wrap">	
+			<div class="entry full-height">
+				
+				
+				<div class="service-detail-banner" [style.backgroundImage]="'url(' + ourservicescontent?.bg + ')'"></div>
+
+				<div class="detail-header">
+					<div class="table-wrap"><div class="table-cell middle-line">
+						<i class="fa {{ourservicescontent?.serviceicon}}"></i>
+						<span>{{ourservicescontent?.servicename}}</span>
+					</div></div>	
+				</div>
+
+				<div class="service-detail-content-holder">
+					<div class="main-wrap">
+						<div class="content-section">
+							<div [innerHTML]="ourservicescontent?.content"></div>
+						</div>
+					</div>	
+				</div>	
+
+
+			</div>
+		</div>	
+	</div>
+
+
+
+
+
+	<!-- <span>{{ ourservicescontent?.servicename }}</span> -->
+
+
+
+
+
+	<div class="bootom-listing-nav"><i class="fa fa-th" routerLink="/navigation-panel"></i><i class="fa fa-chevron-left" routerLink="/our-services"></i></div>
+
+</ion-content>

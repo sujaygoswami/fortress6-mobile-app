@@ -1,0 +1,66 @@
+install ionic globally
+=======================
+npm install -g ionic
+
+check ionic version
+=======================
+ionic -v
+
+start new project
+=======================
+sudo ionic start tab-menu-with-detail(project name) tabs(type of template)
+
+start project
+=======================
+ionic serve
+
+if node sass error
+=======================
+sudo npm install --save-dev  --unsafe-perm node-sass
+
+new page
+=======================
+ionic g page star-page(page name)
+
+ionic paralax tutorial
+===========================
+https://www.joshmorony.com/how-to-create-a-directive-in-ionic-2-parallax-header/
+
+modal
+==========================
+https://ampersandacademy.com/tutorials/ionic-framework-4/ionic-4-modal-example-using-ipl-2019-players-information
+
+
+build
+===========================
+sudo cordova platform remove android
+
+sudo cordova platform add android
+
+sudo ionic cordova build android
+
+
+git origin set
+===================
+Open Terminal.
+
+Change the current working directory to your local project.
+
+List your existing remotes in order to get the name of the remote you want to change.
+
+$ git remote -v
+> origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
+> origin  https://github.com/USERNAME/REPOSITORY.git (push)
+Change your remote's URL from HTTPS to SSH with the git remote set-url command.
+
+$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+
+
+FIRST PUSH
+
+echo "# fortress6-app-ionic" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sujaygoswami/fortress6-app-ionic.git
+git push -u origin master

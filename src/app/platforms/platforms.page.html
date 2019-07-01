@@ -1,0 +1,39 @@
+<ion-content class="inner-page">
+
+	<div class="logo-holder"><div><img src="assets/images/company-logo.png"></div></div>
+	
+	<div class="fixed-page-header">
+		<div class="table-wrap"><div class="table-cell middle-line">
+			<div class="main-wrap">
+				<span>Our Platforms</span>
+			</div>
+		</div></div>
+	</div>
+
+	<div class="main-content-wrap">
+		<div class="main-wrap">	
+			<div class="entry">
+				
+				<!-- platforms module -->
+				<div class="platforms-module">
+
+					<!-- col -->
+					<div class="platform-block" *ngFor="let platform of platforms;let i=index">
+						<div class="force-full-height" (click)="openModal(platform,i)" slot="end">
+							<div class="icon-block"><div class="table-wrap"><div class="table-cell middle-line"><img src="{{platform.icon}}"></div></div></div>
+							<div class="excerpt-block"><div class="table-wrap"><div class="table-cell middle-line"><span>{{platform.text}}</span></div></div></div>
+						</div>
+					</div>	
+					<!-- col -->
+
+				</div>	
+				<!-- platforms module -->
+
+
+			</div>
+		</div>	
+	</div>
+
+	<div class="bootom-listing-nav"><i class="fa fa-th" routerLink="/navigation-panel"></i></div>
+
+</ion-content>

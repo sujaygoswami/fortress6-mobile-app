@@ -1,0 +1,40 @@
+.platforms-module{
+
+
+	.platform-block{
+		height: 100px;
+		margin-bottom: 15px;
+
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+
+	.icon-block{
+		width: 30%;
+		float: left;
+		height: 100%;
+		background-color: var(--site-primary-color);
+		color: #fff;
+		text-align: center;
+		
+		img{
+			max-height: 90px;
+			width: auto;
+		}
+	}
+
+	.excerpt-block{
+		width: 70%;
+		float: left;
+		height: 100%;
+		background-color: #eee;
+		padding: 15px;
+		font-size: 24px;
+
+		span{
+			display: block;
+		}
+	}
+
+}

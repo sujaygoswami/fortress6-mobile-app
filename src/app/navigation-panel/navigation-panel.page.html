@@ -1,0 +1,38 @@
+<ion-content>
+
+
+	<div class="navigation-panel-holder">
+
+		<div class="logo-holder"><div><img src="assets/images/company-logo.png"></div></div>
+
+			<div *ngFor="let navpanlebackground of navpanelBackImage">
+				<div class="back-img-holder" [style.backgroundImage]="'url(' + navpanlebackground.image + ')'"></div>
+			</div>
+		
+		
+			
+		<div class="main-navigation-panel clearfix">
+			<div class="table-wrap"><div class="table-cell middle-line">
+				<div class="row two-column-grid">
+
+					<div class="col" *ngFor="let navItem of navigations">
+						<div class="main-wrap full-height pull-text-center" routerLink="{{navItem.link}}">
+							<div class="table-wrap"><div class="table-cell middle-line">
+								<i class="fa {{navItem.icon}}"></i>
+								<span>{{navItem.text}}</span>
+							</div></div>	
+						</div>	
+					</div>
+
+					
+
+				</div>
+			</div></div>	
+		</div>
+		
+
+	</div>	
+
+
+
+</ion-content>

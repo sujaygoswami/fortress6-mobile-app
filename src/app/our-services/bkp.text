@@ -1,0 +1,28 @@
+<div class="main-content-wrap force-no-pad">
+		<div class="main-wrap">	
+			<div class="entry full-height">
+				
+				<!-- services module -->
+				<div class="services-module full-height clearfix">
+					
+
+						<!-- col -->
+						<div class="col" *ngFor="let serviceBlock of serviceblocks">
+							<div class="main-wrap">
+								<div class="table-wrap"><div class="table-cell middle-line">
+									<i class="fa {{serviceBlock.icon}}"></i>
+									<span>{{serviceBlock.text}}</span>
+								</div></div>	
+							</div>	
+						</div>	
+						<!-- col -->
+
+
+
+				</div>	
+				<!-- services module -->
+
+
+			</div>
+		</div>	
+	</div>

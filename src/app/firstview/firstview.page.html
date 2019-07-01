@@ -1,0 +1,17 @@
+<ion-content *ngFor="let firstPageContent of firstPage">
+
+	<div class="start-page-holder" [style.backgroundImage]="'url(' + firstPageContent.image + ')'">
+			
+			<div class="main-wrap">
+				<div class="table-wrap pull-text-left">
+					<div class="table-cell middle-line">
+						<h1>{{firstPageContent.excerpt}}</h1>
+					</div>	
+				</div>
+				<div class="dig-to-site pull-text-center"><div (click)="goNavigationPanel()"><span>GO</span></div></div>
+
+			</div>		
+
+	</div>	
+
+</ion-content>

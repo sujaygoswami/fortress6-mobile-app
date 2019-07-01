@@ -1,0 +1,28 @@
+.services-module{
+
+	.col{
+		float: left;
+		width: 50%;
+		height: 50%;
+		box-shadow: 0 0 1px #ccc;
+		& > .main-wrap{
+			height: 100%;
+			text-align: center;
+			color: var(--site-primary-color);
+			padding: 15px;
+
+			.fa{
+				font-size: 50px;
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			span{
+				display: block;
+				font-weight: var(--primary-custom-font-light);
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+<div class="modal-header">
+	<ion-header>
+	  <ion-toolbar>
+	      <ion-buttons slot="start">
+	          <ion-button (click)="dismiss()">
+	            <span ion-text color="primary" showWhen="ios"></span>
+	            <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+	          </ion-button>
+	        </ion-buttons>
+	    <ion-title>Platform Detail</ion-title>
+	  </ion-toolbar>
+	</ion-header>
+</div>
+
+
+<ion-content>
+
+
+   		<div class="primary-info">
+	        <div class="platform-img"><img [src]="platform.icon"></div>
+			<div class="platform-title">{{platform.text}}</div>
+		</div>
+
+
+		<div class="main-content-wrap">
+			<div class="main-wrap">
+				<div class="entry">
+					<div class="excerpt" [innerHTML]="platform.excerpt"></div>
+				</div>	
+			</div>	
+		</div>	
+         
+
+      
+
+        
+       
+</ion-content>

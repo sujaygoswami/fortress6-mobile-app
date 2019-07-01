@@ -1,0 +1,48 @@
+<ion-content class="inner-page">
+
+	<div class="logo-holder"><div><img src="assets/images/company-logo.png"></div></div>
+
+	<div class="fixed-page-header">
+		<div class="table-wrap"><div class="table-cell middle-line">
+			<div class="main-wrap">
+				<span>Our Services</span>
+			</div>
+		</div></div>
+	</div>
+
+
+	<div class="main-content-wrap force-no-pad">
+		<div class="main-wrap">	
+			<div class="entry full-height">
+				
+				<!-- services module -->
+				<div class="services-module full-height clearfix">
+					
+
+						<!-- col -->
+						<div class="col" [routerLink]="'/service-detail/' + ourservicescontent.id" detail="true" *ngFor="let ourservicescontent of ourserviceContentPage.ourservicescontents">
+							<div class="main-wrap">
+								<div class="table-wrap"><div class="table-cell middle-line">
+									<i class="fa {{ourservicescontent.serviceicon}}"></i>
+									<span>{{ourservicescontent.servicename}}</span>
+								</div></div>	
+							</div>	
+						</div>	
+						<!-- col -->
+
+
+
+				</div>	
+				<!-- services module -->
+
+
+			</div>
+		</div>	
+	</div>
+
+
+
+
+	<div class="bootom-listing-nav"><i class="fa fa-th" routerLink="/navigation-panel"></i></div>
+
+</ion-content>
