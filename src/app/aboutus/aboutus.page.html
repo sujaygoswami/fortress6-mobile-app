@@ -1,20 +1,29 @@
 <ion-content class="inner-page">
 
-	<div class="logo-holder"><div><img src="assets/images/company-logo.png"></div></div>
-	
-	<div class="fixed-page-header">
-		<div class="table-wrap"><div class="table-cell middle-line">
-			<div class="main-wrap">
-				<span>About Us</span>
-			</div>
-		</div></div>
+	<div class="logo-holder">
+
+		<div class="service-menu left">
+			<a href="mailto: contact(at)fortress6.com"><i class="fa fa-envelope"></i></a>
+			<a href="tel: 03365555256"><i class="fa fa-phone"></i></a>
+		</div>	
+
+		<div class="logo"><img src="assets/images/company-logo.png"></div>
+
+
+		<div class="service-menu right">
+			<a href="https://www.facebook.com/Fortress6-Technologies-1637880229835858/" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/Fortress6Tech" target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+
 	</div>
+	
+	
 
 	<div class="main-content-wrap">
 		<div class="main-wrap">	
-			<div class="entry">
-				<p>Fortress6 Technologies is an obsessive bunch of young and enthusiast professionals who strive to offer innovative web development, web design and managed outsourcing services with a unique combination of technology and creativity. Our constant struggle and commitment to quality are the main driving forces behind our unprecedented success and growth.</p>
-				<p>With deep industry experience and technical expertise of more than ten years, we got the opportunity to work closely with some top organizations and technological brands and stimulating them with core IT solutions and marketing ideas. We offer tailored business solutions to our clients and this makes us fortunate to work with more than 100 clients across the globe.</p>
+			<div class="entry" *ngFor="let content of pageContent">
+				<h1 class="page-title">{{content.title}}</h1>
+				<div [innerHTML]="content.text"></div>
 			</div>
 		</div>	
 	</div>

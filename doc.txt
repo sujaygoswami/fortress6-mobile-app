@@ -64,3 +64,33 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/sujaygoswami/fortress6-app-ionic.git
 git push -u origin master
+
+
+
+
+
+
+var set in mac
+=================
+adb devices
+
+vi ~/.bash_profile
+
+E(edit)
+
+I(insert)
+
+export JAVA_HOME=
+export ANDROID_HOME=~/Users/sujaygoswami/Library/Android/sdk
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_AVD_HOME=~/.android/avd
+export PATH=$PATH:$JAVA_HOME/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+
+Now in order to save and exit file, perform below key actions -
+                1. Press escape (esc) key.
+                2. Type ':wq' and hit enter.
+
+
+source ~/.bash_profile                
+
+

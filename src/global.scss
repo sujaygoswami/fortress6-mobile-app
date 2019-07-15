@@ -165,30 +165,11 @@ p{
 	}
 
 
-	/*fixed-page-header*/
-	.fixed-page-header{
-		height: 15vh;
-		background-color: var(--site-primary-color);
-		z-index: 100;
-
-		.main-wrap{
-
-			padding: 0 15px;
-			color: var(--ion-custom-color-white);
-			font-weight: var(--primary-custom-font-light);
-			font-size: 35px;
-			text-transform: uppercase;
-
-			span{
-				display: inline-block;
-			}
-		}
-	}
-	/*fixed-page-header*/
+	
 
 	/*main-content-wrap*/
 	.main-content-wrap{
-		height: 63vh;
+		height: 75vh;
 		padding: 15px;
 
 		& > .main-wrap{
@@ -202,12 +183,37 @@ p{
 			
 			color: var(--site-dark-color);
 			font-weight: var(--primary-custom-font-light);
+
+			p, h1, h2, h3, h4, h5, h6, li{
+				margin-top: 0px;
+
+				&:last-child{
+					margin-bottom: 0px;
+				}
+			}
+
+
+			h1, h2, h3, h4, h5, h6{
+				margin-bottom: 10px;
+			}
 			
 			p{
 				font-size: 14px;
 				color: var(--site-dark-color);
 				font-weight: var(--primary-custom-font-light);
 				line-height: 26px;
+				margin-bottom: 10px;
+			}
+
+			h1{
+				color: var(--site-primary-color);
+				font-weight: var(--primary-custom-font-light);
+
+				&.page-title{
+					text-transform: uppercase;
+					font-size: 36px;
+					margin-bottom: 25px;
+				}
 			}
 		} 
 	}
@@ -240,21 +246,56 @@ p{
 		left: 0px;
 		top: 0px;
 		text-align: center;
-		height: 12vh;
+		height: 15vh;
 		z-index: 5;
 
+		.service-menu{
+			position: fixed;
 
-		& > div{
+				a{
+					display: inline-block;
+					vertical-align: middle;
+					width: 30px;
+					height: 30px;
+					border-radius: 100%;
+					text-align: center;
+					line-height: 30px;
+					background-color: var(--ion-custom-color-white);
+					color: var(--site-primary-color);
+					margin-right: 10px;
+
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+
+			&.left{
+				left: 15px;
+				top: 30px;
+				text-align: left;
+			}
+
+			&.right{
+				right: 15px;
+				top: 30px;
+				text-align: right;
+			}
+		}
+
+
+		& > .logo{
 			display: inline-block;
 			padding: 10px;
 			background-color: #fff;
 			border-radius: 0 0 5px 5px;
+
+			img{
+				width: 120px;
+				height: auto;
+			}
 		}
 
-		img{
-			width: 120px;
-			height: auto;
-		}
+		
 	}
 	/*logo holder*/
 

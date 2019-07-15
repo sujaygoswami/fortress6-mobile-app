@@ -45,6 +45,7 @@ export class NavigationPanelPage implements OnInit {
     {
       icon: "fa-black-tie",
       text: "Team",
+      link: "/team",
     },
     {
       icon: "fa-thumbs-o-up",
