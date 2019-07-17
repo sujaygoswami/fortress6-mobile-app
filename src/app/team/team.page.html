@@ -3,16 +3,14 @@
 	<div class="logo-holder">
 
 		<div class="service-menu left">
-			<a href="mailto: contact(at)fortress6.com"><i class="fa fa-envelope"></i></a>
-			<a href="tel: 03365555256"><i class="fa fa-phone"></i></a>
+			<a *ngFor="let constantsvalue of constantpage.constantsvaluesleft" href="{{constantsvalue.action}}: {{constantsvalue.content}}"><i class="fa {{constantsvalue.icon}}"></i></a>
 		</div>	
 
 		<div class="logo"><img src="assets/images/company-logo.png"></div>
 
 
 		<div class="service-menu right">
-			<a href="https://www.facebook.com/Fortress6-Technologies-1637880229835858/" target="_blank"><i class="fa fa-facebook"></i></a>
-			<a href="https://twitter.com/Fortress6Tech" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a *ngFor="let constantsvalue of constantpage.constantsvaluesright" href="{{constantsvalue.content}}" target="_blank"><i class="fa {{constantsvalue.icon}}"></i></a>
 		</div>
 
 	</div>
@@ -29,20 +27,27 @@
 
 
 						<!-- team block -->
-						<div class="col team-block">
+						<div class="col team-block" *ngFor="let teaminfo of teamsinfo">
 							<div class="main-wrap">
 
 								<div class="dp">
 									<div class="table-wrap"><div class="table-cell middle-line">
 										<div class="main-wrap">
-											<img src="../assets/images/team-dp-mini.jpg">
+											<img src="{{teaminfo.dp}}">
 										</div>
 									</div></div>
 								</div>
 
 								<div class="basic-info">
-									<div class="name">Aftab Alam</div>
-									<div class="designation">CEO</div>
+									<div class="name">{{teaminfo.name}}</div>
+									<div class="designation">{{teaminfo.designation}}</div>
+									<div class="social">
+										<div class="main-wrap">
+											<div><a class="fa fa-facebook" href="{{teaminfo.facebook}}" target="_blank"></a></div>
+											<div><a class="fa fa-twitter" href="{{teaminfo.twitter}}" target="_blank"></a></div>
+											<div><a class="fa fa-google-plus" href="{{teaminfo.googleplus}}" target="_blank"></a></div>
+										</div>	
+									</div>	
 								</div>	
 
 							</div>	

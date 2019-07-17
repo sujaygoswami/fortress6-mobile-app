@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConstantsPage } from '../constants/constants.page';
 
 @Component({
   selector: 'app-aboutus',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutusPage implements OnInit {
 
-  constructor() { }
+  constructor(private constantpage: ConstantsPage) { }
 
   ngOnInit() {
   }

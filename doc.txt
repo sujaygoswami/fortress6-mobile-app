@@ -91,6 +91,26 @@ Now in order to save and exit file, perform below key actions -
                 2. Type ':wq' and hit enter.
 
 
-source ~/.bash_profile                
+source ~/.bash_profile
+
+
+
+
+To use jQuery in ionic project do it this way:
+
+Install the Jquery module in your IONIC-3 app as follows:
+
+1, npm install jquery --save
+2, npm install @types/jquery
+then import jquery on your page like this
+
+3, import * as $ from "jquery";
+
+
+ngAfterViewInit(){
+    $(document).ready(function(){
+        alert('JQuery is working!!');
+    });
+}          
 
 

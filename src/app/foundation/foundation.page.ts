@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConstantsPage } from '../constants/constants.page';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoundationPage implements OnInit {
 
-  constructor() { }
+  constructor(private constantpage: ConstantsPage) { }
 
   ngOnInit() {
   }

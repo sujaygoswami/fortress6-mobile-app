@@ -1,6 +1,12 @@
 .team-module{
 
 	.team-block{
+		margin-top: 15px;
+
+		&:first-child{
+			margin-top: 0px;
+		}
+		
 		& > .main-wrap{
 
 			
@@ -29,12 +35,47 @@
 			height: 100%;
 			float: left;
 			background-color: var(--site-primary-color);
-			padding: 15px;
+			padding: 15px 15px 50px 15px;
 			color: var(--ion-custom-color-white);
 			text-align: left;
+			position: relative;
 
 			.name{
-				font-size: 24px;
+				font-size: 18px;
+			}
+		}
+
+		.social{
+			width: 100%;
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+
+			.main-wrap{
+				display: flex;
+
+				& > div{
+					flex-grow: 1;
+					height: 40px;
+					text-align: center;
+					background-color: var(--site-dark-color);
+					border-right: 1px solid var(--site-light-grey);
+					line-height: 40px;
+					color: var(--site-light-grey);
+					font-size: 20px;
+
+					a{
+						color: var(--site-light-grey);
+						display: block;
+						height: 100%;
+						line-height: 40px;
+						text-decoration: none;
+					}
+
+					&:last-child{
+						border-right: 0px;
+					}
+				}
 			}
 		}
 	}

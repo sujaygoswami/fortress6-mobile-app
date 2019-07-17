@@ -50,14 +50,6 @@ export class NavigationPanelPage implements OnInit {
     {
       icon: "fa-thumbs-o-up",
       text: "Carrer",
-    },
-    {
-      icon: "fa-facebook",
-      text: "Follow US",
-    },
-    {
-      icon: "fa-phone",
-      text: "Contact Us",
     }
   ];
 

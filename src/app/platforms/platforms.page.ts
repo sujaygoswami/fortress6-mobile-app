@@ -4,6 +4,8 @@ import { ModalController } from '@ionic/angular';
 
 import { PlatformDetailPage } from '../platform-detail/platform-detail.page';
 
+import { ConstantsPage } from '../constants/constants.page';
+
 
 
 @Component({
@@ -13,7 +15,7 @@ import { PlatformDetailPage } from '../platform-detail/platform-detail.page';
 })
 export class PlatformsPage implements OnInit {
 
-  constructor(public modalController: ModalController) { }
+  constructor(public modalController: ModalController, private constantpage: ConstantsPage) { }
 
   ngOnInit() {
   }

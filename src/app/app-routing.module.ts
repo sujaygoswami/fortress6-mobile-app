@@ -27,7 +27,10 @@ const routes: Routes = [
   { path: 'platforms', loadChildren: './platforms/platforms.module#PlatformsPageModule' },
   
   { path: 'platform-detail', loadChildren: './platform-detail/platform-detail.module#PlatformDetailPageModule' },
+  
   { path: 'team', loadChildren: './team/team.module#TeamPageModule' },
+  
+  { path: 'constants', loadChildren: './constants/constants.module#ConstantsPageModule' },
 
   
   
