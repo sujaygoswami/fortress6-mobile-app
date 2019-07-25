@@ -114,3 +114,7 @@ ngAfterViewInit(){
 }          
 
 
+
+ionic form
+
+https://github.com/ionicthemes/ionic-forms-and-validations

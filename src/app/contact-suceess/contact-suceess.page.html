@@ -1,0 +1,22 @@
+<ion-content class="inner-page">
+<div class="logo-holder">
+	<div class="service-menu left">
+		<a *ngFor="let constantsvalue of constantpage.constantsvaluesleft" href="{{constantsvalue.action}}: {{constantsvalue.content}}"><i class="fa {{constantsvalue.icon}}"></i></a>
+	</div>
+	<div class="logo"><img src="assets/images/company-logo.png"></div>
+	<div class="service-menu right">
+		<a *ngFor="let constantsvalue of constantpage.constantsvaluesright" href="{{constantsvalue.content}}" target="_blank"><i class="fa {{constantsvalue.icon}}"></i></a>
+	</div>
+</div>
+
+
+<div class="main-content-wrap">
+	<div class="main-wrap">
+		<div class="entry element-gap element-gap-default" *ngFor="let content of pageContent">
+			<h1 class="page-title" [innerHTML]="content.title"></h1>
+			<div [innerHTML]="content.text"></div>
+		</div>
+	</div>
+</div>
+<div class="bootom-listing-nav"><i class="fa fa-th" routerLink="/navigation-panel"></i></div>
+</ion-content>

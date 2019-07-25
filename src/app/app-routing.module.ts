@@ -31,6 +31,9 @@ const routes: Routes = [
   { path: 'team', loadChildren: './team/team.module#TeamPageModule' },
   
   { path: 'constants', loadChildren: './constants/constants.module#ConstantsPageModule' },
+  
+  { path: 'career', loadChildren: './career/career.module#CareerPageModule' },
+  { path: 'contact-suceess', loadChildren: './contact-suceess/contact-suceess.module#ContactSuceessPageModule' },
 
   
   

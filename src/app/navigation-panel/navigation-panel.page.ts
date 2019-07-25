@@ -49,7 +49,8 @@ export class NavigationPanelPage implements OnInit {
     },
     {
       icon: "fa-thumbs-o-up",
-      text: "Carrer",
+      text: "Career",
+      link: "/career",
     }
   ];
 
