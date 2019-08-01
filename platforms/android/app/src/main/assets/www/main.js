@@ -847,7 +847,23 @@ var map = {
 	],
 	"./aboutus/aboutus.module": [
 		"./src/app/aboutus/aboutus.module.ts",
+		"common",
 		"aboutus-aboutus-module"
+	],
+	"./career/career.module": [
+		"./src/app/career/career.module.ts",
+		"common",
+		"career-career-module"
+	],
+	"./constants/constants.module": [
+		"./src/app/constants/constants.module.ts",
+		"common",
+		"constants-constants-module"
+	],
+	"./contact-suceess/contact-suceess.module": [
+		"./src/app/contact-suceess/contact-suceess.module.ts",
+		"common",
+		"contact-suceess-contact-suceess-module"
 	],
 	"./firstview/firstview.module": [
 		"./src/app/firstview/firstview.module.ts",
@@ -855,6 +871,7 @@ var map = {
 	],
 	"./foundation/foundation.module": [
 		"./src/app/foundation/foundation.module.ts",
+		"common",
 		"foundation-foundation-module"
 	],
 	"./navigation-panel/navigation-panel.module": [
@@ -871,6 +888,7 @@ var map = {
 	],
 	"./platforms/platforms.module": [
 		"./src/app/platforms/platforms.module.ts",
+		"common",
 		"platforms-platforms-module"
 	],
 	"./service-detail/service-detail.module": [
@@ -886,6 +904,11 @@ var map = {
 	"./tabs/tabs.module": [
 		"./src/app/tabs/tabs.module.ts",
 		"tabs-tabs-module"
+	],
+	"./team/team.module": [
+		"./src/app/team/team.module.ts",
+		"common",
+		"team-team-module"
 	],
 	"./test-routing/test-routing.module": [
 		"./src/app/test-routing/test-routing.module.ts",
@@ -943,6 +966,10 @@ var routes = [
     { path: 'our-services-content', loadChildren: './services/our-services-content/our-services-content.module#OurServicesContentPageModule' },
     { path: 'platforms', loadChildren: './platforms/platforms.module#PlatformsPageModule' },
     { path: 'platform-detail', loadChildren: './platform-detail/platform-detail.module#PlatformDetailPageModule' },
+    { path: 'team', loadChildren: './team/team.module#TeamPageModule' },
+    { path: 'constants', loadChildren: './constants/constants.module#ConstantsPageModule' },
+    { path: 'career', loadChildren: './career/career.module#CareerPageModule' },
+    { path: 'contact-suceess', loadChildren: './contact-suceess/contact-suceess.module#ContactSuceessPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -969,7 +996,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
+module.exports = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n"
 
 /***/ }),
 
@@ -1216,7 +1243,7 @@ var PlatformDetailPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-header\">\n\t<ion-header>\n\t  <ion-toolbar>\n\t      <ion-buttons slot=\"start\">\n\t          <ion-button (click)=\"dismiss()\">\n\t            <span ion-text color=\"primary\" showWhen=\"ios\"></span>\n\t            <ion-icon name=\"md-close\" showWhen=\"android,windows\"></ion-icon>\n\t          </ion-button>\n\t        </ion-buttons>\n\t    <ion-title>Platform Detail</ion-title>\n\t  </ion-toolbar>\n\t</ion-header>\n</div>\n\n\n<ion-content>\n\n\n   \t\t<div class=\"primary-info\">\n\t        <div class=\"platform-img\"><img [src]=\"platform.icon\"></div>\n\t\t\t<div class=\"platform-title\">{{platform.text}}</div>\n\t\t</div>\n\n\n\t\t<div class=\"main-content-wrap\">\n\t\t\t<div class=\"main-wrap\">\n\t\t\t\t<div class=\"entry\">\n\t\t\t\t\t<div class=\"excerpt\" [innerHTML]=\"platform.excerpt\"></div>\n\t\t\t\t</div>\t\n\t\t\t</div>\t\n\t\t</div>\t\n         \n\n      \n\n        \n       \n</ion-content>"
+module.exports = "<div class=\"modal-header\">\r\n\t<ion-header>\r\n\t  <ion-toolbar>\r\n\t      <ion-buttons slot=\"start\">\r\n\t          <ion-button (click)=\"dismiss()\">\r\n\t            <span ion-text color=\"primary\" showWhen=\"ios\"></span>\r\n\t            <ion-icon name=\"md-close\" showWhen=\"android,windows\"></ion-icon>\r\n\t          </ion-button>\r\n\t        </ion-buttons>\r\n\t    <ion-title>Platform Detail</ion-title>\r\n\t  </ion-toolbar>\r\n\t</ion-header>\r\n</div>\r\n\r\n\r\n<ion-content>\r\n\r\n\r\n   \t\t<div class=\"primary-info\">\r\n\t        <div class=\"platform-img\"><img [src]=\"platform.icon\"></div>\r\n\t\t\t<div class=\"platform-title\">{{platform.text}}</div>\r\n\t\t</div>\r\n\r\n\r\n\t\t<div class=\"main-content-wrap\">\r\n\t\t\t<div class=\"main-wrap\">\r\n\t\t\t\t<div class=\"entry\">\r\n\t\t\t\t\t<div class=\"excerpt\" [innerHTML]=\"platform.excerpt\"></div>\r\n\t\t\t\t</div>\t\r\n\t\t\t</div>\t\r\n\t\t</div>\t\r\n         \r\n\r\n      \r\n\r\n        \r\n       \r\n</ion-content>"
 
 /***/ }),
 
@@ -1227,7 +1254,7 @@ module.exports = "<div class=\"modal-header\">\n\t<ion-header>\n\t  <ion-toolbar
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".primary-info {\n  height: 30vh; }\n\n.modal-header {\n  height: 10vh; }\n\n.platform-img {\n  display: block;\n  text-align: center;\n  margin-bottom: 15px; }\n\n.platform-img img {\n    width: auto;\n    max-width: 100%;\n    height: auto;\n    display: inline-block; }\n\n.platform-title {\n  display: block;\n  text-align: center;\n  font-size: 24px; }\n\n.main-content-wrap {\n  height: 60vh; }\n\nion-button {\n  color: var(--site-primary-color); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zdWpheWdvc3dhbWkvRG9jdW1lbnRzL1NVSkFZX0dPU1dBTUlfUFJPSkVDVFMvYXBwL2ZvcnRyZXNzNi1tb2JpbGUtYXBwL3NyYy9hcHAvcGxhdGZvcm0tZGV0YWlsL3BsYXRmb3JtLWRldGFpbC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxZQUFZLEVBQUE7O0FBSWI7RUFFRSxZQUFZLEVBQUE7O0FBS2Q7RUFDQyxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLG1CQUFtQixFQUFBOztBQUhwQjtJQU1FLFdBQVc7SUFDWCxlQUFlO0lBQ2YsWUFBWTtJQUNaLHFCQUFxQixFQUFBOztBQUl2QjtFQUNDLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsZUFBZSxFQUFBOztBQUdoQjtFQUNDLFlBQVksRUFBQTs7QUFLYjtFQUVFLGdDQUFnQyxFQUFBIiwiZmlsZSI6InNyYy9hcHAvcGxhdGZvcm0tZGV0YWlsL3BsYXRmb3JtLWRldGFpbC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJpbWFyeS1pbmZve1xuXHRoZWlnaHQ6IDMwdmg7XG5cdFxufVxuXG4ubW9kYWwtaGVhZGVye1xuXG5cdFx0aGVpZ2h0OiAxMHZoO1xuXHRcdFxufVx0XHRcblxuXG4ucGxhdGZvcm0taW1ne1xuXHRkaXNwbGF5OiBibG9jaztcblx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHRtYXJnaW4tYm90dG9tOiAxNXB4O1xuXG5cdGltZ3tcblx0XHR3aWR0aDogYXV0bztcblx0XHRtYXgtd2lkdGg6IDEwMCU7XG5cdFx0aGVpZ2h0OiBhdXRvO1xuXHRcdGRpc3BsYXk6IGlubGluZS1ibG9jaztcblx0fVxufVxuXG4ucGxhdGZvcm0tdGl0bGV7XG5cdGRpc3BsYXk6IGJsb2NrO1xuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XG5cdGZvbnQtc2l6ZTogMjRweDtcbn1cblxuLm1haW4tY29udGVudC13cmFwe1xuXHRoZWlnaHQ6IDYwdmg7XG5cdFxufVxuXG5cbmlvbi1idXR0b257XG5cdFxuXHRcdGNvbG9yOiB2YXIoLS1zaXRlLXByaW1hcnktY29sb3IpO1xuXG59XG5cblxuIl19 */"
+module.exports = ".primary-info {\n  height: 30vh; }\n\n.modal-header {\n  height: 10vh; }\n\n.platform-img {\n  display: block;\n  text-align: center;\n  margin-bottom: 15px; }\n\n.platform-img img {\n    width: auto;\n    max-width: 100%;\n    height: auto;\n    display: inline-block; }\n\n.platform-title {\n  display: block;\n  text-align: center;\n  font-size: 24px; }\n\n.main-content-wrap {\n  height: 60vh; }\n\nion-button {\n  color: var(--site-primary-color); }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGxhdGZvcm0tZGV0YWlsL0U6XFxTdWpheSBHb3N3YW1pXFxQcm9qZWN0c1xcYXBwXFxmb3J0cmVzczYtbW9iaWxlLWFwcC9zcmNcXGFwcFxccGxhdGZvcm0tZGV0YWlsXFxwbGF0Zm9ybS1kZXRhaWwucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsWUFBWSxFQUFBOztBQUliO0VBRUUsWUFBWSxFQUFBOztBQUtkO0VBQ0MsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixtQkFBbUIsRUFBQTs7QUFIcEI7SUFNRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLFlBQVk7SUFDWixxQkFBcUIsRUFBQTs7QUFJdkI7RUFDQyxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGVBQWUsRUFBQTs7QUFHaEI7RUFDQyxZQUFZLEVBQUE7O0FBS2I7RUFFRSxnQ0FBZ0MsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3BsYXRmb3JtLWRldGFpbC9wbGF0Zm9ybS1kZXRhaWwucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByaW1hcnktaW5mb3tcclxuXHRoZWlnaHQ6IDMwdmg7XHJcblx0XHJcbn1cclxuXHJcbi5tb2RhbC1oZWFkZXJ7XHJcblxyXG5cdFx0aGVpZ2h0OiAxMHZoO1xyXG5cdFx0XHJcbn1cdFx0XHJcblxyXG5cclxuLnBsYXRmb3JtLWltZ3tcclxuXHRkaXNwbGF5OiBibG9jaztcclxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblx0bWFyZ2luLWJvdHRvbTogMTVweDtcclxuXHJcblx0aW1ne1xyXG5cdFx0d2lkdGg6IGF1dG87XHJcblx0XHRtYXgtd2lkdGg6IDEwMCU7XHJcblx0XHRoZWlnaHQ6IGF1dG87XHJcblx0XHRkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcblx0fVxyXG59XHJcblxyXG4ucGxhdGZvcm0tdGl0bGV7XHJcblx0ZGlzcGxheTogYmxvY2s7XHJcblx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG5cdGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG5cclxuLm1haW4tY29udGVudC13cmFwe1xyXG5cdGhlaWdodDogNjB2aDtcclxuXHRcclxufVxyXG5cclxuXHJcbmlvbi1idXR0b257XHJcblx0XHJcblx0XHRjb2xvcjogdmFyKC0tc2l0ZS1wcmltYXJ5LWNvbG9yKTtcclxuXHJcbn1cclxuXHJcblxyXG4iXX0= */"
 
 /***/ }),
 
@@ -1333,7 +1360,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/sujaygoswami/Documents/SUJAY_GOSWAMI_PROJECTS/app/fortress6-mobile-app/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\Sujay Goswami\Projects\app\fortress6-mobile-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -99,6 +99,77 @@ var _sPassive,GestureController=function(){function t(t){this.doc=t,this.gesture
 
 /***/ }),
 
+/***/ "./src/app/constants/constants.page.html":
+/*!***********************************************!*\
+  !*** ./src/app/constants/constants.page.html ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title>constants</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/constants/constants.page.scss":
+/*!***********************************************!*\
+  !*** ./src/app/constants/constants.page.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnN0YW50cy9jb25zdGFudHMucGFnZS5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/constants/constants.page.ts":
+/*!*********************************************!*\
+  !*** ./src/app/constants/constants.page.ts ***!
+  \*********************************************/
+/*! exports provided: ConstantsPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConstantsPage", function() { return ConstantsPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+
+var ConstantsPage = /** @class */ (function () {
+    function ConstantsPage() {
+        this.constantsvaluesleft = [];
+        this.constantsvaluesright = [];
+        // Set some test todos
+        this.constantsvaluesleft = [
+            { content: 'contact(at)fortress6.com', icon: 'fa-envelope', action: 'mailto' },
+            { content: '03365555256', icon: 'fa-phone', action: 'tel' },
+        ];
+        this.constantsvaluesright = [
+            { content: 'https://www.facebook.com/Fortress6-Technologies-1637880229835858/', icon: 'fa-facebook' },
+            { content: 'https://twitter.com/Fortress6Tech', icon: 'fa-twitter' },
+        ];
+    }
+    ConstantsPage.prototype.ngOnInit = function () {
+    };
+    ConstantsPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-constants',
+            template: __webpack_require__(/*! ./constants.page.html */ "./src/app/constants/constants.page.html"),
+            styles: [__webpack_require__(/*! ./constants.page.scss */ "./src/app/constants/constants.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ConstantsPage);
+    return ConstantsPage;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/our-services-content/our-services-content.page.html":
 /*!******************************************************************************!*\
   !*** ./src/app/services/our-services-content/our-services-content.page.html ***!
@@ -106,7 +177,7 @@ var _sPassive,GestureController=function(){function t(t){this.doc=t,this.gesture
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>our-services-content</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title>our-services-content</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n\r\n</ion-content>\r\n"
 
 /***/ }),
 

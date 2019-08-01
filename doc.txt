@@ -118,3 +118,47 @@ ngAfterViewInit(){
 ionic form
 
 https://github.com/ionicthemes/ionic-forms-and-validations
+
+
+
+ionic build
+==============================
+
+ionic cordova build android
+ionic cordova build android --buildConfig=build.json
+ionic cordova build android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true
+ionic cordova build android --prod --release -- -- --keystore=filename.keystore --alias=myalias
+ionic cordova build android --prod --release -- -- --minSdkVersion=21
+ionic cordova build android --prod --release -- -- --versionCode=55
+ionic cordova build android --prod --release --buildConfig=build.json
+ionic cordova build ios
+ionic cordova build ios --buildConfig=build.json
+ionic cordova build ios --prod --release
+ionic cordova build ios --prod --release -- --developmentTeam="ABCD" --codeSignIdentity="iPhone Developer" --packageType="app-store"
+ionic cordova build ios --prod --release --buildConfig=build.json
+
+run emulator
+=========================================
+##  npm i -g native-run
+
+
+ionic cordova emulate android
+ionic cordova emulate android --buildConfig=build.json
+ionic cordova emulate android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true
+ionic cordova emulate android --prod --release -- -- --keystore=filename.keystore --alias=myalias
+ionic cordova emulate android --prod --release -- -- --minSdkVersion=21
+ionic cordova emulate android --prod --release -- -- --versionCode=55
+ionic cordova emulate android --prod --release --buildConfig=build.json
+ionic cordova emulate android -l
+ionic cordova emulate ios
+ionic cordova emulate ios --buildConfig=build.json
+ionic cordova emulate ios --livereload
+ionic cordova emulate ios --livereload-url=http://localhost:8100
+ionic cordova emulate ios --prod --release
+ionic cordova emulate ios --prod --release -- --developmentTeam="ABCD" --codeSignIdentity="iPhone Developer" --packageType="app-store"
+ionic cordova emulate ios --prod --release --buildConfig=build.json
+
+icon and splash screen
+===========================
+npm install -g cordova-res
+$ ionic cordova resources
